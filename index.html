@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="img/png" href="https://lh3.googleusercontent.com/a01MR7DjdBg1KMP7bj3bucaMqLHLTfzdYl8rFpRFW8gy2r8CNoMhKJ5MtVJRSifZzLwqiw=s85">
+</head>
+
+<body>
+    <title>How does morden technology work</title>
+    <div class="Tutoriel" id="click" onclick="popUp(), clickSound()">?</div>
+    <button id="fullscreen" onclick="full(), clickSound()"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
+    <button id="events" onclick="clickSound(), UpEvents()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+    <p class="verson">v1.0</p>
+    <div class="row_1_container">
+        <div class="target_earth">
+            <img src="https://i.pinimg.com/originals/c9/4e/80/c94e8089de6a33d951621df40bf90060.gif">
+            <button class="TP" id="Btn_1" onclick="onClick()"> Destroy planet</button>
+            <audio src="Destroyed.mp3" id="Voice"></audio>
+            <audio src="mixkit-unlock-game-notification-253.wav" id="Win"></audio>
+            <audio src="click.wav" id="ClickSound"></audio>
+        </div>
+        <div class="up_events" id="Event">
+            New Upadte is coming on 4-11-2021<br>
+            This update will have new things:-<br>
+            ⦿ You can send how your army to attack the alians. You can choose how many soldiers you want.<br>
+            ⦿ You can talk to your commander with the help of a walkie torquay.
+            <button id="close1" onclick="closeBtn1(), clickSound()">
+                <p Id="cross1">X</p>
+            </button>
+        </div>
+        <div class="Detect_virus_container">
+            <audio src="Alert.wav" id="aletr"></audio>
+            <button id="Detect_v" onClick="Detect()">Detect Virus</button>
+            <img src="https://c.tenor.com/26pNa498OS0AAAAj/warning-joypixels.gif" height="50" id="alert_v">
+            <p id="code_v">Virus Detected<br>Code: B12b3243b3b2</p>
+            <p id="Display_Default_v">Scan Virus <br>in the system</p>
+        </div>
+        <div class="Upload_virus_container">
+            <textarea id="code" oncopy="return false" oncut="return false" disabled>
+                 Upload_virus(), connection(B12b3243b3b2g3454h)
+                 virus_effect(#5 = )
+                 capture_virus- virus_code()  hack_virus_code( 00001 4h3g3jl4jg3h3)  
+                 (virus_code = "100012")
+                 c3c243hg3ghc3m2b22hj
+                 (virus_size = "725 MB") 
+              </textarea>
+            <button class="TP one" id="Btn_2" onclick="onClick1()"> Upload virus</button>
+            <audio src="virus 1.mp3" id="Voice1"></audio>
+        </div>
+    </div>
+    <div class="Tutorials_popUp" id="white">
+        <button id="close" onclick="closeBtn(), clickSound()">
+            <p Id="cross">X</p>
+        </button>
+        ⦿ The page will refresh whenever you finish a function of a button<br>
+        ⦿ Destroy planet - You can get an idea of how morden technology destroys other planets<br>
+        ⦿ Detect virus - You will come to know how people find virus in the system<br>
+        ⦿ Upload virus - You can upload virus in other system by clicking on upload virus. But this does not upload
+        virus really(this is fake)<br><br>
+        <div class="creator">
+            <img src="https://lh3.googleusercontent.com/-ez_PKU2g9g4/YWEifbe4UGI/AAAAAAAAAMY/ayvSjo--SLcVRCZEt6thNvFCVLOIsaw3wCMICGAYYCw/s83-c/coding-and-testing-programming-of-software.jpg" class="My_profile">
+        <p class="Prajwal" id="Name">Prajwal.uppalapati@gmail.com</p>
+        </div>
+        <p>Creator: Prajwal U - India</p>
+        You can send a mail if you have any questions about this website or ideas about the website update.
+    </div>
+    <script>
+        function onClick() {
+            document.getElementById("Btn_1").innerHTML = "Success"
+            document.getElementById("Btn_1").disabled = true
+            setTimeout(() => {
+                document.getElementById("Btn_1").innerHTML = "Destroy planet"
+                document.getElementById("Btn_1").disabled = false
+                document.getElementById("Btn_2").disabled = false
+            }, 3000);
+            document.getElementById("Win").play()
+            document.getElementById("Voice").play()
+            setTimeout(function () {
+                location.reload(true);
+            }, 5000);
+        }
+        function onClick1() {
+            document.getElementById("Btn_2").innerHTML = "Virus uploaded"
+            document.getElementById("Btn_1").disabled = true
+            setTimeout(() => {
+                document.getElementById("Btn_1").innerHTML = "Upload virus"
+                document.getElementById("Btn_2").disabled = false
+                document.getElementById("Btn_1").disabled = false
+            }, 3000);
+            document.getElementById("Win").play()
+            document.getElementById("Voice1").play()
+            setTimeout(function () {
+                location.reload(true);
+            }, 5000);
+        }
+        function Detect() {
+            document.getElementById("Detect_v").innerHTML = "Detected Virus"
+            document.getElementById("Btn_1").disabled = true
+        setTimeout(() => {
+                document.getElementById("Detect_v").innerHTML = "Detect virus"
+                document.getElementById("Btn_2").disabled = false
+                document.getElementById("Btn_1").disabled = false
+            }, 3000);
+            document.getElementById("aletr").play()
+            document.getElementById("code_v").style.visibility = "visible";
+            document.getElementById("alert_v").style.visibility = "visible";
+            document.getElementById("Display_Default_v").style.visibility = "hidden";
+            document.getElementById("code_v");
+            setTimeout(function () {
+                location.reload(true);
+            }, 5000);
+        }
+        function popUp() {
+            document.getElementById("white").style.visibility = "visible";
+            document.getElementById("close").style.visibility = "visible";
+            document.getElementById("cross").style.visibility = "visible";
+        }
+        function closeBtn() {
+            document.getElementById("white").style.visibility = "hidden";
+            document.getElementById("close").style.visibility = "hidden";
+            document.getElementById("cross").style.visibility = "hidden";
+        }
+        function full(){
+            document.documentElement.requestFullscreen()
+        }
+        function clickSound(){
+            document.getElementById("ClickSound").play()
+        }
+        function UpEvents(){
+            document.getElementById("Event").style.visibility = "visible";
+            document.getElementById("close1").style.visibility = "visible";
+            document.getElementById("cross1").style.visibility = "visible";
+        }
+        function closeBtn1() {
+            document.getElementById("Event").style.visibility = "hidden";
+            document.getElementById("close1").style.visibility = "hidden";
+            document.getElementById("cross1").style.visibility = "hidden";
+        }
+    </script>
+</body>
+
+</html>
