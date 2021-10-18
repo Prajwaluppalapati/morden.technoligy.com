@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="img/png" href="https://cdn.pixabay.com/photo/2018/01/25/19/16/ufo-3106867_960_720.png">
+    <link rel="shortcut icon" type="img/png" href="https://lh3.googleusercontent.com/a01MR7DjdBg1KMP7bj3bucaMqLHLTfzdYl8rFpRFW8gy2r8CNoMhKJ5MtVJRSifZzLwqiw=s85">
 </head>
 
 <body>
@@ -11,7 +11,7 @@
     <div class="Tutoriel" id="click" onclick="popUp(), clickSound()">?</div>
     <button id="fullscreen" onclick="full(), clickSound()"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
     <button id="events" onclick="clickSound(), UpEvents()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-    <p class="verson">v1.0</p>
+    <p class="verson">v1.1</p>
     <div class="row_1_container">
         <div class="target_earth">
             <img src="https://i.pinimg.com/originals/c9/4e/80/c94e8089de6a33d951621df40bf90060.gif">
@@ -21,10 +21,10 @@
             <audio src="click.wav" id="ClickSound"></audio>
         </div>
         <div class="up_events" id="Event">
-          New Upadte is coming on 18-10-2021<br>
+            New Upadte is coming on 18-10-2021<br>
             This update will have a new look<br>
             <button id="close1" onclick="closeBtn1(), clickSound()">
-                <p Id="cross1">X</p>
+                <i class="fa fa-window-close" Id="cross1" id="close1" aria-hidden="true"></i>
             </button>
         </div>
         <div class="Detect_virus_container">
@@ -49,7 +49,7 @@
     </div>
     <div class="Tutorials_popUp" id="white">
         <button id="close" onclick="closeBtn(), clickSound()">
-            <p Id="cross">X</p>
+            <i class="fa fa-window-close" Id="cross" id="close" aria-hidden="true"></i>
         </button>
         ⦿ The page will refresh whenever you finish a function of a button<br>
         ⦿ Destroy planet - You can get an idea of how morden technology destroys other planets<br>
@@ -57,8 +57,9 @@
         ⦿ Upload virus - You can upload virus in other system by clicking on upload virus. But this does not upload
         virus really(this is fake)<br><br>
         <div class="creator">
-            <img src="https://lh3.googleusercontent.com/-ez_PKU2g9g4/YWEifbe4UGI/AAAAAAAAAMY/ayvSjo--SLcVRCZEt6thNvFCVLOIsaw3wCMICGAYYCw/s83-c/coding-and-testing-programming-of-software.jpg" class="My_profile">
-        <p class="Prajwal" id="Name">Prajwal.uppalapati@gmail.com</p>
+            <img src="https://lh3.googleusercontent.com/-ez_PKU2g9g4/YWEifbe4UGI/AAAAAAAAAMY/ayvSjo--SLcVRCZEt6thNvFCVLOIsaw3wCMICGAYYCw/s83-c/coding-and-testing-programming-of-software.jpg"
+                class="My_profile">
+            <p class="Prajwal" id="Name">Prajwal.uppalapati@gmail.com</p>
         </div>
         <p>Creator: Prajwal U - India</p>
         You can send a mail if you have any questions about this website or ideas about the website update.
@@ -95,7 +96,7 @@
         function Detect() {
             document.getElementById("Detect_v").innerHTML = "Detected Virus"
             document.getElementById("Btn_1").disabled = true
-        setTimeout(() => {
+            setTimeout(() => {
                 document.getElementById("Detect_v").innerHTML = "Detect virus"
                 document.getElementById("Btn_2").disabled = false
                 document.getElementById("Btn_1").disabled = false
@@ -119,13 +120,13 @@
             document.getElementById("close").style.visibility = "hidden";
             document.getElementById("cross").style.visibility = "hidden";
         }
-        function full(){
+        function full() {
             document.documentElement.requestFullscreen()
         }
-        function clickSound(){
+        function clickSound() {
             document.getElementById("ClickSound").play()
         }
-        function UpEvents(){
+        function UpEvents() {
             document.getElementById("Event").style.visibility = "visible";
             document.getElementById("close1").style.visibility = "visible";
             document.getElementById("cross1").style.visibility = "visible";
@@ -134,6 +135,10 @@
             document.getElementById("Event").style.visibility = "hidden";
             document.getElementById("close1").style.visibility = "hidden";
             document.getElementById("cross1").style.visibility = "hidden";
+        
+        }
+        function special(){
+            document.getElementById("white_weekend").style.visibility="visible";
         }
     </script>
 </body>
